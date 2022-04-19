@@ -1,3 +1,4 @@
 from django.contrib import admin
-
-# Register your models here.
+from attendance.models import SubmitAttendance
+# 作ったモデルを登録する
+admin.site.register(SubmitAttendance)
