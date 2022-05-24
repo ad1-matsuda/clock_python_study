@@ -9,16 +9,17 @@ class SubmitAttendance(models.Model):
         db_table = 'attendance'
 
     PLACES = (
-        (1, 'Bar Foo'),
-        (2, 'Bar Baz'),
-        (3, 'Bar Qux'),
-        (4, 'Bar Quux'),
-        (5, 'Bar Corge'),
-        (6, 'Bar Grault'),
+        (1, '開発部'),
+        (2, '営業部'),
+        (3, '自宅'),
+        (4, '客先'),
     )
     IN_OUT = (
-        (1, 'IN'),
-        (0, 'OUT'),
+        (1, '出勤'),
+        (0, '退勤'),
+        (2, 'リモート'),
+        (3, '外出'),
+        (3, '早退'),
     )
 
     staff = models.ForeignKey(get_user_model(), verbose_name="スタッフ", on_delete=models.CASCADE, default=None)
