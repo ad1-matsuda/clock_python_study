@@ -18,7 +18,7 @@ class SubmitAttendance(models.Model):
         (0, '退勤'),
         (2, 'リモート'),
         (3, '外出'),
-        (3, '早退'),
+        (4, '早退'),
     )
 
     staff = models.ForeignKey(get_user_model(), verbose_name="スタッフ", on_delete=models.CASCADE, default=None)
