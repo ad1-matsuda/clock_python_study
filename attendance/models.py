@@ -9,10 +9,9 @@ class SubmitAttendance(models.Model):
         db_table = 'attendance'
 
     PLACES = (
-        (1, '開発部'),
-        (2, '営業部'),
-        (3, '自宅'),
-        (4, '客先'),
+        (1, '本部'),
+        (2, '自宅'),
+        (3, '客先'),
     )
     IN_OUT = (
         (1, '出勤'),
